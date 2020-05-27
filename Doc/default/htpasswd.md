@@ -68,7 +68,7 @@ spec:
 ```
 위와 같이 `yaml` 파일을 작성 후, config 를 apply 합니다.  
 ```bash
-$ $ oc apply -f </path/to/CR>
+$ oc apply -f </path/to/CR>
 ```
 
 ## Web Console 사용
