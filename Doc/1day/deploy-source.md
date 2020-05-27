@@ -11,14 +11,14 @@
 <img src="/asset/o/src-5.png" style="max-width: 95%; height: auto;"></br></p>
 <img src="/asset/o/src-6.png" style="max-width: 95%; height: auto;"></br></p>
 <img src="/asset/o/src-7.png" style="max-width: 95%; height: auto;"></br></p>
-<img src="/asset/o/src-8.png">original 배포 완료</br></p>
+<p align="center"><img src="/asset/o/src-8.png">original 배포 완료</br></p>
 <img src="/asset/o/src-9.png" style="max-width: 95%; height: auto;">Scale Out 수행</br></p>
-<img src="/asset/o/src-10.png">Load Balance 확인이 가능합니다.</br></p>
+<p align="center"><img src="/asset/o/src-10.png">Load Balance 확인이 가능합니다.</br></p>
 <img src="/asset/o/src-11.png" style="max-width: 95%; height: auto;">Source Version 변경</br></p>
 <img src="/asset/o/src-12.png" style="max-width: 95%; height: auto;">Github 에 Source Push 완료</br></p>
 <img src="/asset/o/src-13.png" style="max-width: 95%; height: auto;">Start Build</br></p>
 <img src="/asset/o/src-14.png" style="max-width: 95%; height: auto;"></br></p>
-<img src="/asset/o/src-15.png">Version v2 배포 완료</br></p>
+<p align="center"><img src="/asset/o/src-15.png">Version v2 배포 완료</br></p>
    
 # WAR File 을 이용하여 Jboss 서비스 배포
 WAR(Web application ARchive) File 을 이용하여 App 을 배포하도록 하겠습니다.   
