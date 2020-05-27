@@ -2,9 +2,9 @@
 이번 Lab 은 Container Image 로 생성된 App 을 배포 하도록 하겠습니다.   
    
 ## Django + pgsql 배포 (no pv)
-<img src="/asset/o/temp-1.png" style="max-width: 95%; height: auto;"></br>Project 생성</p>
+<img src="/asset/o/temp-1.png" style="max-width: 95%; height: auto;">Project 생성</br></p>
 <img src="/asset/o/temp-2.png" style="max-width: 95%; height: auto;"></br></p>
-<img src="/asset/o/temp-3.png" style="max-width: 95%; height: auto;"></br>Django + pgsql Ephemeral 선택</p>
+<img src="/asset/o/temp-3.png" style="max-width: 95%; height: auto;">Django + pgsql Ephemeral 선택합니다.</br></p>
 <img src="/asset/o/temp-4.png" style="max-width: 95%; height: auto;"></br></p>
 <img src="/asset/o/temp-5.png" style="max-width: 95%; height: auto;"></br></p>
 <img src="/asset/o/temp-6.png" style="max-width: 95%; height: auto;"></br></p>

@@ -10,7 +10,7 @@
 <img src="/asset/o/img-2.png" style="max-width: 95%; height: auto;"></p>   
    
 <img src="/asset/o/img-3.png" style="max-width: 95%; height: auto;"></p>
-* `[openshiftkatacoda/blog-django-py](https://github.com/openshift-katacoda/blog-django-py)` Django WebApp 를 배포합니다.      
+* [`openshiftkatacoda/blog-django-py`](https://github.com/openshift-katacoda/blog-django-py) Django WebApp 를 배포합니다.      
 <img src="/asset/o/img-4.png" style="max-width: 95%; height: auto;"></p>
    
 <img src="/asset/o/img-5.png" style="max-width: 95%; height: auto;"></p>
@@ -18,7 +18,8 @@
 <img src="/asset/o/img-6.png" style="max-width: 95%; height: auto;"></p>
    
 <img src="/asset/o/img-7.png" style="max-width: 95%; height: auto;"></p>
-   
+배포 완료!   
+      
 ## CLI 로 배포
 ```bash
 $ oc new-app openshiftkatacoda/blog-django-py --name blog-from-image
@@ -91,7 +92,7 @@ COPY index.html /usr/local/apache2/htdocs/
 
 EXPOSE 80
 ```   
-해당 경로에는 `[Dockerfile](https://raw.githubusercontent.com/chhanz/sample-httpd-example/master/Dockerfile)` 및 `[index.html](https://raw.githubusercontent.com/chhanz/sample-httpd-example/master/index.html)` 파일이 필요합니다.   
+해당 경로에는 [`Dockerfile`](https://raw.githubusercontent.com/chhanz/sample-httpd-example/master/Dockerfile) 및 [`index.html`](https://raw.githubusercontent.com/chhanz/sample-httpd-example/master/index.html) 파일이 필요합니다.   
    
 ### Build
 ```bash

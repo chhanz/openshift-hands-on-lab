@@ -4,21 +4,21 @@
 # PHP WebApp 배포
 > Web Console 로 `developer` 계정으로 로그인합니다.   
 
-<img src="/asset/o/src-1.png" style="max-width: 95%; height: auto;"></br>Project 생성</p>
+<img src="/asset/o/src-1.png" style="max-width: 95%; height: auto;">Project 생성</br></p>
 <img src="/asset/o/src-2.png" style="max-width: 95%; height: auto;"></br></p>
-<img src="/asset/o/src-3.png" style="max-width: 95%; height: auto;"></br>소스 주소 : https://github.com/chhanz/docker-swarm-demo.git</p>
-<img src="/asset/o/src-4.png" style="max-width: 95%; height: auto;"></br>PHP Version 선택</p>
+<img src="/asset/o/src-3.png" style="max-width: 95%; height: auto;">소스 주소 : https://github.com/chhanz/docker-swarm-demo.git</br></p>
+<img src="/asset/o/src-4.png" style="max-width: 95%; height: auto;">PHP Version 선택</br></p>
 <img src="/asset/o/src-5.png" style="max-width: 95%; height: auto;"></br></p>
 <img src="/asset/o/src-6.png" style="max-width: 95%; height: auto;"></br></p>
 <img src="/asset/o/src-7.png" style="max-width: 95%; height: auto;"></br></p>
-<img src="/asset/o/src-8.png" style="max-width: 95%; height: auto;"></br>original 배포 완료</p>
-<img src="/asset/o/src-9.png" style="max-width: 95%; height: auto;"></br>Scale Out</p>
-<img src="/asset/o/src-10.png" style="max-width: 95%; height: auto;"></br>Load Balance</p>
-<img src="/asset/o/src-11.png" style="max-width: 95%; height: auto;"></br>Source Version 변경</p>
-<img src="/asset/o/src-12.png" style="max-width: 95%; height: auto;"></br>Github 에 Source Push 완료</p>
-<img src="/asset/o/src-13.png" style="max-width: 95%; height: auto;"></br>Start Build</p>
+<center><img src="/asset/o/src-8.png" style="max-width: 95%; height: auto;">original 배포 완료</br></p></center>
+<img src="/asset/o/src-9.png" style="max-width: 95%; height: auto;">Scale Out 수행</br></p>
+<img src="/asset/o/src-10.png" style="max-width: 95%; height: auto;">Load Balance 확인이 가능합니다.</br></p>
+<img src="/asset/o/src-11.png" style="max-width: 95%; height: auto;">Source Version 변경</br></p>
+<img src="/asset/o/src-12.png" style="max-width: 95%; height: auto;">Github 에 Source Push 완료</br></p>
+<img src="/asset/o/src-13.png" style="max-width: 95%; height: auto;">Start Build</br></p>
 <img src="/asset/o/src-14.png" style="max-width: 95%; height: auto;"></br></p>
-<img src="/asset/o/src-15.png" style="max-width: 95%; height: auto;"></br>Version v2 배포 완료</p>
+<center><img src="/asset/o/src-15.png" style="max-width: 95%; height: auto;">Version v2 배포 완료</br></p></center>
    
 # WAR File 을 이용하여 Jboss 서비스 배포
 WAR(Web application ARchive) File 을 이용하여 App 을 배포하도록 하겠습니다.   
