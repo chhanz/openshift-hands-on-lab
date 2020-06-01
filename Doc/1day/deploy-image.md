@@ -10,7 +10,8 @@
 <img src="/asset/o/img-2.png" style="max-width: 95%; height: auto;"></p>   
    
 <img src="/asset/o/img-3.png" style="max-width: 95%; height: auto;"></p>
-* [`openshiftkatacoda/blog-django-py`](https://github.com/openshift-katacoda/blog-django-py) Django WebApp 를 배포합니다.      
+* [`openshiftkatacoda/blog-django-py`](https://github.com/openshift-katacoda/blog-django-py) Django WebApp 를 배포합니다.    
+* Copy to Paste : `openshiftkatacoda/blog-django-py`   
 <img src="/asset/o/img-4.png" style="max-width: 95%; height: auto;"></p>
    
 <img src="/asset/o/img-5.png" style="max-width: 95%; height: auto;"></p>
