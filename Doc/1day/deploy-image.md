@@ -23,6 +23,8 @@
       
 ## CLI 로 배포
 ```bash
+$ oc login -u developer
+$ oc project django-project
 $ oc new-app openshiftkatacoda/blog-django-py --name blog-from-image
 $ oc expose svc/blog-from-image
 $ oc get all
