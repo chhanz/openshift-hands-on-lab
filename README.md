@@ -1,6 +1,7 @@
 # OpenShift 4.X Hands-on lab
 + Public Github : [https://github.com/chhanz](https://github.com/chhanz)   
 + Blog : [https://chhanz.github.io/](https://chhanz.github.io/)   
++ Playground : [https://www.openshift.com/learn/courses/playground/](https://www.openshift.com/learn/courses/playground/)   
 
 ## Default Configuration
 + [OAuth 설정 - htpasswd](/Doc/default/htpasswd.md)   
