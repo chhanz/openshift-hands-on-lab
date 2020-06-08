@@ -1,5 +1,5 @@
 # Deploying Applications From Template
-이번 Lab 은 Container Image 로 생성된 App 을 배포 하도록 하겠습니다.   
+이번 Lab 은 Template 로 생성된 App 을 배포 하도록 하겠습니다.   
    
 ## Django + pgsql 배포 (no pv)
 <img src="/asset/o/temp-1.png" style="max-width: 95%; height: auto;">Project 생성</br></p>
