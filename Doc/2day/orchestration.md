@@ -207,3 +207,5 @@ node/worker1.ocp.chhan.com uncordoned
 ```
 장애 복구 완료 후, Pod 이 Scheduling 이 가능하도록 `uncordon` 옵션을 이용하여 Scheduling Enabled 을 합니다.   
    
+# 참고 자료
+* [https://chhanz.github.io/openshift/2019/07/15/okd-hpa/](https://chhanz.github.io/openshift/2019/07/15/okd-hpa/)   
