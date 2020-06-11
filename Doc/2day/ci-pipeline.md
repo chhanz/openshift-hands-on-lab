@@ -12,19 +12,23 @@ CI/CD는 새로운 코드 통합으로 인해 개발 및 운영팀에 발생하�
 * 참고 자료: [https://www.redhat.com/ko/topics/devops/what-is-ci-cd](https://www.redhat.com/ko/topics/devops/what-is-ci-cd)   
    
 # Jenkins 배포
++ Example Pipeline Diagram    
 ![](/asset/cicd/pipeline.png)   
-+ Example Pipeline Diagram   
    
-![](/asset/cicd/ci-1.png)   
 + Project 생성   
-![](/asset/cicd/ci-2.png)   
+![](/asset/cicd/ci-1.png)   
+   
 + Template 를 이용한 `Jenkins` 배포   
-![](/asset/cicd/ci-3.png)   
+![](/asset/cicd/ci-2.png)   
+   
 + 배포 완료   
-![](/asset/cicd/ci-4.png)   
+![](/asset/cicd/ci-3.png)   
+   
 + `Jenkins` 의 SSO 가 OpenShift 와 연동되어 계정 통합 관리가 가능합니다.   
-![](/asset/cicd/ci-5.png)   
+![](/asset/cicd/ci-4.png)   
+   
 + `Jenkins` Dashboard   
+![](/asset/cicd/ci-5.png)   
    
 # Buildconfig 생성
 OpenShift 에서 `JenkinsPipeline` Type 의 `Buildconfig` 를 생성해야됩니다.   
