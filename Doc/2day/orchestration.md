@@ -209,3 +209,4 @@ node/worker1.ocp.chhan.com uncordoned
    
 # 참고 자료
 * [https://chhanz.github.io/openshift/2019/07/15/okd-hpa/](https://chhanz.github.io/openshift/2019/07/15/okd-hpa/)   
+* [https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)   
