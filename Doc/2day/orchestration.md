@@ -3,7 +3,8 @@
 
 # Auto Scailing 설정
 OpenShfit 는 아래와 같이 내장되어 있는 Prometheus 를 이용하여 OpenShift 내의 Pod metric 을 수집하고 모니터링을 할수있도록 지원하고 있습니다.   
-참고 자료: [https://access.redhat.com/solutions/3990701](https://access.redhat.com/solutions/3990701)   
+* 참고 자료: [https://access.redhat.com/solutions/3990701](https://access.redhat.com/solutions/3990701)   
+   
 또한 Horizontal Pod Autoscaler(이하 HPA) 를 이용하여 설정한 CPU 사용률을 기반으로 Replicaset, Deployment 의 Pod 수를 자동으로 Scaling 할 수 있습니다.
 ```bash
 $ oc adm top node
