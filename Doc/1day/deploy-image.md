@@ -26,7 +26,11 @@
 $ oc login -u developer
 $ oc project django-project
 $ oc new-app openshiftkatacoda/blog-django-py --name blog-from-image
+
 $ oc expose svc/blog-from-image
+  ... or ... 
+$ oc create route edge --service blog-from-image
+
 $ oc get all
 NAME                                  READY   STATUS      RESTARTS   AGE
 pod/blog-django-py-6b787ccc9f-hl7tk   1/1     Running     0          16m
