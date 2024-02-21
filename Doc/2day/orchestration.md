@@ -55,10 +55,10 @@ SCC 추가 작업 진행합니다.
 ```bash
 $ oc login -u developer
 $ oc new-build --name=hpa-app --binary=true
-$ oc start-build hpa-app --from-dir=/root/hpa/
+$ oc start-build hpa-app --from-dir=.
 $ oc new-app hpa-app
 $ oc expose service hpa-app
-$ oc set resources deploymentconfigs hpa-app --limits=cpu=200m --requests=cpu=100m
+$ oc set resources deployment hpa-app --limits=cpu=200m --requests=cpu=100m
 ```
 신규 PHP APP 배포합니다.   
 ```bash
@@ -68,15 +68,15 @@ APP 이 정상적으로 배포 되었습니다.
 
 ## HPA 생성
 ```bash
-$ oc autoscale deploymentconfig hpa-app --min=1 --max=10 --cpu-percent=20
+$ oc autoscale deployment hpa-app --min=1 --max=10 --cpu-percent=20
 ```
 위와 같이 HPA 를 생성하고 HPA 를 통해 `hpa-app` 이 metric 정보를 받아올때까지 약간의 시간이 필요합니다.   
 모니터링이 진행되면 아래와 같이 HPA 를 확인 할 수 있습니다.   
 ```bash
 $ oc get hpa -w
-NAME      REFERENCE                  TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
-hpa-app   DeploymentConfig/hpa-app   <unknown>/20%   1         10        1          66s
-hpa-app   DeploymentConfig/hpa-app   4%/20%          1         10        1          118s
+NAME      REFERENCE            TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+hpa-app   Deployment/hpa-app   <unknown>/20%   1         10        0          8s
+hpa-app   Deployment/hpa-app   27%/20%         1         10        2          5m3s   
 ```
 ## load generator 생성
 동일한 namespace 에 Load generator 를 생성합니다.   
@@ -92,8 +92,8 @@ while true; do wget -q -O- http://hpa-app; done
 ## HPA 동작
 ```bash
 $ oc get hpa
-NAME      REFERENCE                  TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
-hpa-app   DeploymentConfig/hpa-app   131%/20%   1         10        6          9m58s
+NAME      REFERENCE            TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+hpa-app   Deployment/hpa-app   31%/20%   1         10        6          7m25s
 $ oc get pod
 NAME                      READY   STATUS      RESTARTS   AGE
 hpa-app-1-build           0/1     Completed   0          14m

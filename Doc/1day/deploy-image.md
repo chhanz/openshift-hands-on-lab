@@ -27,8 +27,12 @@ $ oc login -u developer
 $ oc project django-project
 $ oc new-app openshiftkatacoda/blog-django-py --name blog-from-image
 
+"expose service for http"
 $ oc expose svc/blog-from-image
+   
   ... or ... 
+   
+"expose service for https"
 $ oc create route edge --service blog-from-image
 
 $ oc get all
