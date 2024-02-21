@@ -79,6 +79,22 @@ Push successful
    
 ```bash
 $ oc new-app my-app
+--> Found image bde4968 (14 minutes old) in image stream "s2i-project/my-app" under tag "latest" for "my-app"
+
+    WildFly s2i builder image, JDK 17
+    ---------------------------------
+    Tooling image to build Enterprise Java applications with WildFly
+
+    Tags: builder, wildfly
+
+
+--> Creating resources ...
+    deployment.apps "my-app" created
+    service "my-app" created
+--> Success
+    Application is not exposed. You can expose services to the outside world by executing one or more of the commands below:
+     'oc expose service/my-app'
+    Run 'oc status' to view your app.
 ```
 신규 App 생성합니다.   
    
@@ -90,6 +106,30 @@ route 를 생성합니다.
    
 ```bash
 $ oc get all
+NAME                          READY   STATUS      RESTARTS   AGE
+pod/my-app-1-build            0/1     Completed   0          20m
+pod/my-app-7bf574894d-t6htm   1/1     Running     0          35s
 
+NAME             TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+service/my-app   ClusterIP   172.30.41.87   <none>        8080/TCP   35s
+
+NAME                     READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/my-app   1/1     1            1           35s
+
+NAME                                DESIRED   CURRENT   READY   AGE
+replicaset.apps/my-app-5f67b675d4   0         0         0       35s
+replicaset.apps/my-app-7bf574894d   1         1         1       35s
+
+NAME                                    TYPE     FROM     LATEST
+buildconfig.build.openshift.io/my-app   Source   Binary   1
+
+NAME                                TYPE     FROM             STATUS     STARTED          DURATION
+build.build.openshift.io/my-app-1   Source   Binary@7d6c857   Complete   20 minutes ago   6m17s
+
+NAME                                    IMAGE REPOSITORY                                                      TAGS     UPDATED
+imagestream.image.openshift.io/my-app   image-registry.openshift-image-registry.svc:5000/s2i-project/my-app   latest   14 minutes ago
+
+NAME                              HOST/PORT                                PATH   SERVICES   PORT       TERMINATION   WILDCARD
+route.route.openshift.io/my-app   my-app-s2i-project.apps.okd.example.com          my-app     8080-tcp                 None
 ```
 위와 같이 서비스가 배포 완료된 것을 볼 수 있습니다.   
